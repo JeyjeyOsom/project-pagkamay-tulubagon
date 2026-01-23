@@ -9,24 +9,11 @@ Real-time Analytics: Bi-directional data streaming via WebSockets.
 
 Enterprise Automation: Streamlined creative management and automated workflows.
 
-Multi-tenant Architecture: Secure data isolation and API integration across multiple brands.
-
 High-Fidelity UI: A minimalist, fluid interface built with React and Framer Motion.
 
 Adaptive Theming: Seamless Dark/Light mode integration with dynamic asset switching.
 
 🛠 Tech Stack
-Backend
-Framework: AdonisJS (Node.js)
-
-Language: TypeScript
-
-Database: PostgreSQL
-
-Communication: WebSockets (Socket.io)
-
-Infrastructure: AWS (S3, EC2)
-
 Frontend
 Library: React 18
 
@@ -43,26 +30,8 @@ Bash
 
 git clone https://github.com/JeyjeyOsom/project-pagkamay-tulubagon.git
 cd project-pagkamay-tulubagon
-Install Backend Dependencies
-
-Bash
-
-cd backend
-npm install
-cp .env.example .env # Configure your DB and AWS keys
-node ace migration:run
-Install Frontend Dependencies
-
-Bash
-
-cd ../frontend
 npm install
 Run the Development Environment
-
-Bash
-
-# Backend
-node ace serve --watch
 
 # Frontend
 npm run dev
