@@ -1,19 +1,24 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  darkMode: "class", // enables manual dark mode toggling
+  darkMode: "class",
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./App.{js,jsx,ts,tsx}",
+    "./components/**/*.{js,jsx,ts,tsx}",
+    "./pages/**/*.{js,jsx,ts,tsx}",
+    "./layouts/**/*.{js,jsx,ts,tsx}",
+    "./hooks/**/*.{js,ts}",
+    "./lib/**/*.{js,ts}",
   ],
   theme: {
     extend: {
       colors: {
         brand: {
-          500: "#3B82F6", // Tailwind blue-500
+          500: "#3B82F6",
           600: "#2563EB",
         },
       },
     },
   },
-  plugins: [require('@tailwindcss/forms')],
+  plugins: [require("@tailwindcss/forms")],
 }
